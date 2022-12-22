@@ -1,6 +1,9 @@
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-
-div {
+.container div {
     width: 100px;
     height: 100px;
     background: pink;
@@ -20,9 +23,90 @@ div {
     top:20px;
     position: relative;
 }
-.box {
+
+#box {
     background: red;
     left:20px;
     top:20px;
-    position: sticky;
+    position: relative;
+}
+
+/* float:left img or that things align left and all text surround it */
+/*float: center img or that things align center and all text surround it */
+/*float: right img or that things align right and all text surround it */
+/*but I don't know how to control img and text separate with float*/
+/*I don't know what is difference between grid and float but grid looks more prety*/
+
+
+
+
+/*flexbox*/
+/*flexbox has two different elements (container / items)*/
+/*The propertys for container = display,flex-direction,flex-wrap, flex-flow,justify-content*/
+/*align-items, align-content*/
+/*The propertys for item = order,flex-grow,flex-shrink, flex, align-self*/
+
+.container2{
+    background: beige;
+    height:100%;
+    display: flex;
+    flex-direction: row; /*row-reverse,column, column-reverse*/
+    flex-wrap: wrap; /*default is no-wrap*/
+    /*flex-flow : column wrap; /*This is combine of flex-direction and flex-wrap*/
+    /*main-axis*/ justify-content: space-evenly; /*flex-start is default, flex-end,center, space-around, space-between,space-evenly*/ 
+    /*cross-axis*/align-items: center;
+    align-content: space-between; /*it is smiliar but it is about cross axis*/
+}
+
+
+.item {
+    width:40px;
+    height:40px;
+}
+
+.item1 {
+    background: #ef9a9a; 
+    order: 3; /*it can change order of item but it isnt used well*/
+    flex-grow: 1;/*it is used when the screen is bigger (default is 0)*/
+    flex-shrink: 1; /*it is used when the screen is smaller (default is 0)*/
+    flex-basis: 60%; /*it is used when the screen is smaller or bigger, it is responsive with %(default is 0)*/
+    align-self: center; /*it is used when I control only one item by itself*/
+}
+
+.item2 {
+    background: #f48fb1;
+    order: 1; 
+    flex-grow: 2;
+}
+
+.item3 {
+    background: #ce93d8; 
+}
+
+.item4 {
+    background: #b39ddb; 
+}
+
+.item5 {
+    background: #90caf9; 
+}
+
+.item6 {
+    background: #a5d6a7; 
+}
+
+.item7 {
+    background: #e6ee9c; 
+}
+
+.item8 {
+    background: #fff59d; 
+}
+
+.item9 {
+    background: #e7ce0b; 
+}
+
+.item10 {
+    background: #eeff04; 
 }
