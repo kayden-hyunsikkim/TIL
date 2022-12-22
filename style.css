@@ -1,0 +1,28 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    margin: 20px;
+    
+}
+
+/* For position and flex, parent element should always be relative */
+/* Especially sticky, we should put the first position (ex top,left:20px)*/
+/* fixed is always in window not in parent*/
+/* absolute's standard is parenet*/
+/* relative is moving from where it should be at the first place*/
+
+.container {
+    background: yellow;
+    left:20px;
+    top:20px;
+    position: relative;
+}
+.box {
+    background: red;
+    left:20px;
+    top:20px;
+    position: sticky;
+}
