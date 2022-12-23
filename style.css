@@ -110,3 +110,19 @@ h2{
 .item10 {
     background: #eeff04; 
 }
+
+/*px is absolute unit - it is not good for responsive website*/
+/*em is relative unit - it is good for responsive website - it is based on parent's font-size*/
+/*rem is relative unit - it is good for responsive website - it is based on root's font-size*/
+/*ex) if body's font is 16px but parenet(eg.div)'s font is 8px / 2em is 16px, 0.5em is 4px*/
+/*ex) if body's font is 16px but parenet(eg.div)'s font is 8px / 2rem is 32px but if the html's font is 5*/
+
+/*rem is good for like heade etc because it is same standard even if it has lots of component*/
+/*em is good for like padding etc because it is changed based on font which is content */
+
+/*% is good for containers like boxs or tables*/
+/*vh is viewport hight 100vh = 100% of viewport*/
+/*vw* is viewport width 100vw = 100% of viewport*/
+
+/*TOTAL - V* rem = when I want to set some size which is about resposive with browser */
+/*TOTAL - % em = when I want to set some size which is about resposive with parent */
