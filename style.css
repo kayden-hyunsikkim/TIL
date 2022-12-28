@@ -11,7 +11,7 @@ h2{
     
 }
 
-/* For position and flex, parent element should always be relative */
+/* For position, parent element should always be relative */
 /* Especially sticky, we should put the first position (ex top,left:20px)*/
 /* fixed is always in window not in parent*/
 /* absolute's standard is parenet*/
@@ -35,7 +35,7 @@ h2{
 /*float: center img or that things align center and all text surround it */
 /*float: right img or that things align right and all text surround it */
 /*but I don't know how to control img and text separate with float*/
-/*I don't know what is difference between grid and float but grid looks more prety*/
+/*I don't know what is difference between grid and float but grid looks more pretty*/
 
 
 
